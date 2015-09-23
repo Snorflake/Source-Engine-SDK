@@ -38,18 +38,33 @@ struct Ray_t
 
 private:
 };
+struct csurface_t
+{
+    const char *name;
+    short surfaceProps;
+    unsigned short flags;
+};
+
+struct cplane_t
+{
+    Vector normal;
+    float dist;
+    byte type;
+    byte signbits;
+    byte pad[2];
+};
 struct trace_t
 {
 	Vector start;
 	Vector end;
-	BYTE plane[29];
+	cplane_t plane;
 	float fraction;
 	int contents;
 	WORD dispFlags;
 	bool allsolid;
 	bool startSolid;
 	float fractionLeftSolid;
-	BYTE surface[8];
+	csurface_t surface;
 	int hitGroup;
 	short physicsBone;
 	CBaseEntity* m_pEnt;
