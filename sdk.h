@@ -24,8 +24,6 @@ using namespace std;
 #include "definitions.h"
 #include "indexes.h"
 
-#include "../InputManager.h"
-
 #include "libraries\vmt.h"
 
 #include "structs\vector.h"
@@ -49,8 +47,6 @@ using namespace std;
 #include "structs\trace.h"
 
 #include "libraries\math.h"
-
-#include "../hooks.h"
 
 void StartCheat();
 BOOL WINAPI DllMain(HINSTANCE Instance, DWORD Reason, LPVOID Reserved)
