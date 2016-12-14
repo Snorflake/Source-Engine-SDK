@@ -41,7 +41,7 @@ using namespace std;
 #include "structs\modelinfo.h"
 #include "structs\checksum_md5.h"
 #include "libraries\interfaces.h"
-#include "../Utils.h"
+#include "Utils.h"
 #include "structs\baseentity.h"
 #include "structs\cliententlist.h"
 #include "structs\trace.h"
